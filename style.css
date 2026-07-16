@@ -27,12 +27,13 @@ body {
 .site-title {
   font-size: 22px;
   font-weight: 500;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 /* chat window */
 .chatbox {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .chat-window {
@@ -48,16 +49,43 @@ body {
 
 /* messages */
 .msg {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border-radius: 12px;
   line-height: 1.5;
+  background: #fff;
+  border: 2px solid #e0e0e0;
 }
 
 .msg.user {
   color: #000;
+  background: #fcfcfc;
+  border-color: #e4e4e4;
 }
 
 .msg.ai {
-  color: #666666;
+  color: #333;
+  background: #fcfcfc;
+  border-color: #E3A535;
+}
+
+.msg-label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.msg.user .msg-label {
+  color: #4f4f4f;
+
+}
+
+.msg.ai .msg-label {
+  color: #563c0b;
+}
+
+.msg-text {
+  white-space: pre-wrap;
 }
 
 /* input row */
@@ -139,5 +167,5 @@ body {
 }
 
 .site-footer a:hover {
-  color: #666666;
+  color: #FF003B;
 }
